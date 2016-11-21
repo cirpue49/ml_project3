@@ -9338,8 +9338,8 @@ YdElIiKSCIsuERGRRFh0iYiIJPL/XD2D46GZlmoAAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>A customer who is assigned to farmer's market or icecream shop should best identify with the establishments represented by the feature set of 'Segment 0'.</p>
-<p>A customer who is assigned to retail stores should best identify with the establishments represented by the feature set of 'Segment 1'.</p>
+<p>A customer who is assigned to farmer's market or icecream shop should best identify with the establishments represented by the feature set of 'Segment 0'. This is because Fresh and Frozen in Segment 0 are above the median.</p>
+<p>A customer who is assigned to retail stores should best identify with the establishments represented by the feature set of 'Segment 1'. This is because Milk, Grocery and Detergent_Paper in Segment 1 are above the mean.</p>
 
 </div>
 </div>
@@ -9463,10 +9463,13 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> 
-Sample point 0 could be supermarket, so could belong to 0.</p>
-<p>Sample point 1 could be retail stores, so could belong to 1.</p>
-<p>Sample point 2 could be farmer's market, so could belong to 0.</p>
-<p>Yes, they are consistent on the answer in Question8 except for Sample point 0 .</p>
+Sample point 0 could be supermarket, so could belong to 0. This samples' expenditures does not mimic the mean expenditures of the assigned clusters</p>
+<p>Sample point 1 could be retail stores, so could belong to 1. This samples' expenditures mimic the mean expenditures of the assigned clusters</p>
+<p>Sample point 2 could be farmer's market, so could belong to 0. This samples' expenditures mimic the mean expenditures of the assigned clusters</p>
+<p>Yes, they are consistent on the answer in Question8 except for Sample point 0.</p>
+<p>Sample point 1 has high values in Milk, Grocery and Detergents_Paper, which correspond to the trait of Segment1.</p>
+<p>And, Samle point 2 has Fresh and Frozen, which correspond to the trait of Segment 0.</p>
+<p>However, Sample point 0 has high values in every feature, so I could not tell whoch Segment the sample blongs to.</p>
 
 </div>
 </div>
